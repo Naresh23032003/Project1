@@ -1,0 +1,67 @@
+{
+  "extraction": {
+    "employerName": "Kestrel Analytics Pvt Ltd",
+    "jobTitle": "Data Analyst",
+    "location": "Mumbai",
+    "stateForProfessionalTax": "MH",
+    "ctcAnnual": 800000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 320000,
+        "frequency": "annual",
+        "quote": "Basic: Rs. 3,20,000"
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 160000,
+        "frequency": "annual",
+        "quote": "HRA: Rs. 1,60,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 283008,
+        "frequency": "annual",
+        "quote": "Special Allowance: Rs. 2,83,008"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF: Rs. 21,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 15392,
+        "frequency": "annual",
+        "quote": "Gratuity: Rs. 15,392"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "notice_period",
+        "quote": "Either party may end the employment by giving 90 days written notice.",
+        "days": 90
+      },
+      {
+        "type": "probation",
+        "quote": "You will be on probation for 6 months.",
+        "months": 6
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "notice_period",
+      "level": "yellow"
+    }
+  ]
+}

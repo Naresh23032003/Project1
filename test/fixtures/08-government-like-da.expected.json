@@ -1,0 +1,71 @@
+{
+  "extraction": {
+    "employerName": "National Machinery Corporation Ltd",
+    "jobTitle": "Management Trainee",
+    "location": "Kolkata",
+    "stateForProfessionalTax": "WB",
+    "ctcAnnual": null,
+    "components": [
+      {
+        "label": "Basic Pay",
+        "kind": "basic",
+        "amount": 56100,
+        "frequency": "monthly",
+        "quote": "Basic Pay | 56,100"
+      },
+      {
+        "label": "Dearness Allowance",
+        "kind": "dearness_allowance",
+        "amount": 30855,
+        "frequency": "monthly",
+        "quote": "Dearness Allowance | 30,855"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 8415,
+        "frequency": "monthly",
+        "quote": "House Rent Allowance | 8,415"
+      },
+      {
+        "label": "Transport Allowance",
+        "kind": "other_allowance",
+        "amount": 3600,
+        "frequency": "monthly",
+        "quote": "Transport Allowance | 3,600"
+      },
+      {
+        "label": "Employer PF Contribution",
+        "kind": "employer_pf",
+        "amount": 6732,
+        "frequency": "monthly",
+        "quote": "Employer PF Contribution | 6,732"
+      }
+    ],
+    "pfBasis": "full_basic",
+    "pfCeilingAmount": null,
+    "clauses": [
+      {
+        "type": "probation",
+        "quote": "You will be on probation for 12 months.",
+        "months": 12
+      },
+      {
+        "type": "notice_period",
+        "quote": "Either side may end the service by giving 3 months notice or salary in lieu.",
+        "months": 3
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "probation",
+      "level": "yellow"
+    },
+    {
+      "id": "notice_period",
+      "level": "yellow"
+    }
+  ]
+}

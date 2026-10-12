@@ -1,0 +1,82 @@
+{
+  "extraction": {
+    "employerName": "Zephyr Commerce Pvt Ltd",
+    "jobTitle": "Sales Executive",
+    "location": "Noida",
+    "stateForProfessionalTax": "OTHER",
+    "ctcAnnual": 1000000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 240000,
+        "frequency": "annual",
+        "quote": "Basic: Rs. 2,40,000 per annum"
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 120000,
+        "frequency": "annual",
+        "quote": "HRA: Rs. 1,20,000 per annum"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 256856,
+        "frequency": "annual",
+        "quote": "Special Allowance: Rs. 2,56,856 per annum"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF: Rs. 21,600 per annum"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 11544,
+        "frequency": "annual",
+        "quote": "Gratuity: Rs. 11,544 per annum"
+      },
+      {
+        "label": "Sales Incentive",
+        "kind": "variable",
+        "amount": 350000,
+        "frequency": "annual",
+        "quote": "Sales Incentive (target): Rs. 3,50,000 per annum"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "variable_pay_discretion",
+        "quote": "The sales incentive is paid quarterly at the discretion of the management and depends on achieving targets."
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 30 days.",
+        "days": 30
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "variable_share",
+      "level": "red"
+    },
+    {
+      "id": "variable_pay_discretion",
+      "level": "yellow"
+    }
+  ]
+}

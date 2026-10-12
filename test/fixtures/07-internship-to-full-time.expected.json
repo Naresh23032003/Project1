@@ -1,0 +1,62 @@
+{
+  "extraction": {
+    "employerName": "Lumen EdTech Pvt Ltd",
+    "jobTitle": "Associate Software Engineer",
+    "location": "Bengaluru",
+    "stateForProfessionalTax": "KA",
+    "ctcAnnual": 720000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 288000,
+        "frequency": "annual",
+        "quote": "Basic | 2,88,000"
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 144000,
+        "frequency": "annual",
+        "quote": "HRA | 1,44,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 252547,
+        "frequency": "annual",
+        "quote": "Special Allowance | 2,52,547"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF | 21,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 13853,
+        "frequency": "annual",
+        "quote": "Gratuity | 13,853"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "probation",
+        "quote": "After conversion, you will be on probation for 3 months.",
+        "months": 3
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 30 days.",
+        "days": 30
+      }
+    ],
+    "notes": []
+  },
+  "flags": []
+}

@@ -1,0 +1,75 @@
+{
+  "extraction": {
+    "employerName": "VELOCITY SOFTWARE SOLUTIONS",
+    "jobTitle": "SOFTWARE ENGINEER",
+    "location": null,
+    "stateForProfessionalTax": "TN",
+    "ctcAnnual": 960000,
+    "components": [
+      {
+        "label": "BASIC",
+        "kind": "basic",
+        "amount": 384000,
+        "frequency": "annual",
+        "quote": "BASIC ...................... 3,84,000 P.A."
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 192000,
+        "frequency": "annual",
+        "quote": "HRA ........................ 1,92,000 P.A."
+      },
+      {
+        "label": "SPECIAL ALLOWANCE",
+        "kind": "special_allowance",
+        "amount": 199930,
+        "frequency": "annual",
+        "quote": "SPECIAL ALLOWANCE .......... 1,99,930 P.A."
+      },
+      {
+        "label": "EMPLOYER PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "EMPLOYER PF ................   21,600 P.A."
+      },
+      {
+        "label": "GRATUITY",
+        "kind": "gratuity",
+        "amount": 18470,
+        "frequency": "annual",
+        "quote": "GRATUITY ...................   18,470 P.A."
+      },
+      {
+        "label": "PERFORMANCE LINKED PAY",
+        "kind": "variable",
+        "amount": 144000,
+        "frequency": "annual",
+        "quote": "PERFORMANCE LINKED PAY ..... 1,44,000 P.A."
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "notice_period",
+        "quote": ">>  NOTICE PERIOD: 2 MONTHS",
+        "months": 2
+      },
+      {
+        "type": "service_bond",
+        "quote": ">>  BOND: YOU MUST COMPLETE 18 MONTHS OF SERVICE OR PAY INR 1,50,000 TO THE COMPANY.",
+        "months": 18,
+        "amount": 150000
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "service_bond",
+      "level": "red"
+    }
+  ]
+}

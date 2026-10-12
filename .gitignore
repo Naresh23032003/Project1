@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+coverage/
+test-results/
+playwright-report/
+.vercel/
+.env*
+!.env.example
+*.log
+.DS_Store
+test/live/last-run.json
+public/pdf.worker.min.mjs
+scratch-shots/
+tsconfig.tsbuildinfo
+launch/*.png

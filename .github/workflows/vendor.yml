@@ -1,0 +1,58 @@
+name: vendor
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: copy skills from upstream at pinned commits
+        run: |
+          set -e
+          W="$RUNNER_TEMP/up"
+          mkdir -p "$W"
+          clone() { git clone -q "https://github.com/$1.git" "$W/$2" && git -C "$W/$2" checkout -q "$3"; }
+          clone obra/superpowers sp bb92a77741419a4ab5f06e711a283343f1ada0c3
+          clone anthropics/skills an dbd4588f9e1033efb41dad4bef2f7947c8993d44
+          clone blader/humanizer hu 225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8
+          clone pbakaus/impeccable im 919dbeba520df760a157fe635be62faae88d58da
+          clone microsoft/playwright-cli pw b85c7a736bb473bf55b584e54a09ffa698d6d871
+          D=.claude/skills
+          mkdir -p "$D/_sources/superpowers"
+          for s in "$W"/sp/skills/*/; do
+            n=$(basename "$s")
+            rm -rf "$D/$n"
+            cp -a "$s" "$D/$n"
+          done
+          cp "$W/sp/LICENSE" "$D/_sources/superpowers/LICENSE"
+          printf 'Upstream: https://github.com/obra/superpowers\nCommit: bb92a77741419a4ab5f06e711a283343f1ada0c3\nCopied: the folders under skills/ (MIT, see LICENSE here).\n' > "$D/_sources/superpowers/SOURCE.md"
+          rm -rf "$D/frontend-design"
+          cp -a "$W/an/skills/frontend-design" "$D/frontend-design"
+          printf 'Upstream: https://github.com/anthropics/skills (skills/frontend-design)\nCommit: dbd4588f9e1033efb41dad4bef2f7947c8993d44\nSee LICENSE.txt in this folder.\n' > "$D/frontend-design/SOURCE.md"
+          rm -rf "$D/humanizer"
+          mkdir -p "$D/humanizer"
+          cp "$W/hu/SKILL.md" "$W/hu/LICENSE" "$D/humanizer/"
+          printf 'Upstream: https://github.com/blader/humanizer\nCommit: 225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8\n' > "$D/humanizer/SOURCE.md"
+          rm -rf "$D/impeccable"
+          cp -a "$W/im/.claude/skills/impeccable" "$D/impeccable"
+          cp "$W/im/LICENSE" "$W/im/NOTICE.md" "$D/impeccable/"
+          printf 'Upstream: https://github.com/pbakaus/impeccable (.claude/skills/impeccable build)\nCommit: 919dbeba520df760a157fe635be62faae88d58da\n' > "$D/impeccable/SOURCE.md"
+          rm -rf "$D/playwright-cli"
+          cp -a "$W/pw/skills/playwright-cli" "$D/playwright-cli"
+          cp "$W/pw/LICENSE" "$D/playwright-cli/LICENSE"
+          printf 'Upstream: https://github.com/microsoft/playwright-cli (skills/playwright-cli)\nCommit: b85c7a736bb473bf55b584e54a09ffa698d6d871\nCopied from a clone instead of running npx skills add.\n' > "$D/playwright-cli/SOURCE.md"
+      - name: restore executable bits on hooks and scripts
+        run: |
+          chmod +x .githooks/commit-msg .githooks/pre-commit scripts/check-staged.mjs
+      - name: commit
+        run: |
+          git config user.name "Naresh23032003"
+          git config user.email "rnaresh23032003r@gmail.com"
+          git add -A .claude .githooks scripts
+          git commit -m "vendor skills from upstream"
+          git push

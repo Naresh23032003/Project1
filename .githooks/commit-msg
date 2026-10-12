@@ -1,0 +1,2 @@
+#!/bin/sh
+sed -i -E '/^co-authored-by:/Id; /^claude-session:/Id; /claude\.ai\/code/Id; /generated with .*claude/Id' "$1"

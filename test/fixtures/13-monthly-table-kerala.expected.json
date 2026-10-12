@@ -1,0 +1,62 @@
+{
+  "extraction": {
+    "employerName": "Coastline Software Pvt Ltd",
+    "jobTitle": "Trainee Software Engineer",
+    "location": "Kochi",
+    "stateForProfessionalTax": "KL",
+    "ctcAnnual": 480000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 16000,
+        "frequency": "monthly",
+        "quote": "Basic | 16,000"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 8000,
+        "frequency": "monthly",
+        "quote": "House Rent Allowance | 8,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 13430,
+        "frequency": "monthly",
+        "quote": "Special Allowance | 13,430"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 1800,
+        "frequency": "monthly",
+        "quote": "Employer PF | 1,800"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 770,
+        "frequency": "monthly",
+        "quote": "Gratuity | 770"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 1 month.",
+        "months": 1
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 6 months.",
+        "months": 6
+      }
+    ],
+    "notes": []
+  },
+  "flags": []
+}

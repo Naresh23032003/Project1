@@ -1,0 +1,73 @@
+{
+  "extraction": {
+    "employerName": "Pinecone Data Pvt Ltd",
+    "jobTitle": "Data Engineer",
+    "location": "Bengaluru",
+    "stateForProfessionalTax": "KA",
+    "ctcAnnual": 1200000,
+    "components": [
+      {
+        "label": "Basic Salary",
+        "kind": "basic",
+        "amount": 480000,
+        "frequency": "annual",
+        "quote": "Basic Salary | 4,80,000"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 240000,
+        "frequency": "annual",
+        "quote": "House Rent Allowance | 2,40,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 423312,
+        "frequency": "annual",
+        "quote": "Special Allowance | 4,23,312"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF | 21,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 23088,
+        "frequency": "annual",
+        "quote": "Gratuity | 23,088"
+      },
+      {
+        "label": "Group Health Insurance Premium",
+        "kind": "insurance",
+        "amount": 12000,
+        "frequency": "annual",
+        "quote": "Group Health Insurance Premium | 12,000"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 60 days.",
+        "days": 60
+      },
+      {
+        "type": "background_check",
+        "quote": "This offer is subject to satisfactory background verification."
+      }
+    ],
+    "notes": []
+  },
+  "flags": []
+}

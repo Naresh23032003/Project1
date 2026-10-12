@@ -1,0 +1,80 @@
+{
+  "extraction": {
+    "employerName": "Greenfield BPO Services Pvt Ltd",
+    "jobTitle": "Customer Support Associate",
+    "location": "Hyderabad",
+    "stateForProfessionalTax": "TG",
+    "ctcAnnual": 276000,
+    "components": [
+      {
+        "label": "Basic Salary",
+        "kind": "basic",
+        "amount": 138000,
+        "frequency": "annual",
+        "quote": "Basic Salary | 1,38,000"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 55200,
+        "frequency": "annual",
+        "quote": "House Rent Allowance | 55,200"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 59602,
+        "frequency": "annual",
+        "quote": "Special Allowance | 59,602"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 16560,
+        "frequency": "annual",
+        "quote": "Employer PF | 16,560"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 6638,
+        "frequency": "annual",
+        "quote": "Gratuity | 6,638"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": null,
+    "clauses": [
+      {
+        "type": "unpaid_training",
+        "quote": "The first 2 months of your employment are a training period and the training period is unpaid.",
+        "months": 2
+      },
+      {
+        "type": "shift_change",
+        "quote": "Shifts, including night shifts, may be assigned at the company's discretion."
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 30 days.",
+        "days": 30
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 6 months.",
+        "months": 6
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "unpaid_training",
+      "level": "red"
+    },
+    {
+      "id": "shift_change",
+      "level": "yellow"
+    }
+  ]
+}

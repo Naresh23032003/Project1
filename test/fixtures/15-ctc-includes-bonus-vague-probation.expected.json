@@ -1,0 +1,90 @@
+{
+  "extraction": {
+    "employerName": "Marigold Hospitality Tech Pvt Ltd",
+    "jobTitle": "Associate Consultant",
+    "location": "Delhi",
+    "stateForProfessionalTax": "DL",
+    "ctcAnnual": 750000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 280000,
+        "frequency": "annual",
+        "quote": "Basic | 2,80,000"
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 140000,
+        "frequency": "annual",
+        "quote": "HRA | 1,40,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 244932,
+        "frequency": "annual",
+        "quote": "Special Allowance | 2,44,932"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF | 21,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 13468,
+        "frequency": "annual",
+        "quote": "Gratuity | 13,468"
+      },
+      {
+        "label": "Joining Bonus",
+        "kind": "joining_bonus",
+        "amount": 50000,
+        "frequency": "one_time",
+        "quote": "Joining Bonus | 50,000"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "ctc_includes_one_time",
+        "quote": "Your annual CTC is Rs. 7,50,000, inclusive of a one-time joining bonus of Rs. 50,000.",
+        "amount": 50000
+      },
+      {
+        "type": "probation",
+        "quote": "You will be on probation until your performance is found satisfactory by the management."
+      },
+      {
+        "type": "shift_change",
+        "quote": "Working hours and shifts may be changed by the company at any time."
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 45 days.",
+        "days": 45
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "ctc_includes_one_time",
+      "level": "yellow"
+    },
+    {
+      "id": "probation",
+      "level": "yellow"
+    },
+    {
+      "id": "shift_change",
+      "level": "yellow"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "extraction": {
+    "employerName": "Saffron Retail Pvt Ltd",
+    "jobTitle": "Operations Executive",
+    "location": "Ahmedabad",
+    "stateForProfessionalTax": "GJ",
+    "ctcAnnual": 540000,
+    "components": [
+      {
+        "label": "Basic Salary",
+        "kind": "basic",
+        "amount": 216000,
+        "frequency": "annual",
+        "quote": "Basic Salary: Rs. 2,16,000"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 108000,
+        "frequency": "annual",
+        "quote": "House Rent Allowance: Rs. 1,08,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 184010,
+        "frequency": "annual",
+        "quote": "Special Allowance: Rs. 1,84,010"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF: Rs. 21,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 10390,
+        "frequency": "annual",
+        "quote": "Gratuity: Rs. 10,390"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "location_change",
+        "quote": "The company may transfer you to any of its offices or sites in India at its discretion."
+      },
+      {
+        "type": "relocation",
+        "quote": "Relocation costs paid by the company are recoverable if you leave within 12 months of relocation.",
+        "months": 12
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 30 days.",
+        "days": 30
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "location_change",
+      "level": "yellow"
+    },
+    {
+      "id": "relocation",
+      "level": "yellow"
+    }
+  ]
+}

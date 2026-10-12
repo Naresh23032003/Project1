@@ -1,0 +1,2 @@
+Upstream: https://github.com/blader/humanizer
+Commit: 225a6f39ac85f76ee48dbad772ea4abe4ed6c9d8

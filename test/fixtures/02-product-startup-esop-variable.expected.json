@@ -1,0 +1,86 @@
+{
+  "extraction": {
+    "employerName": "Northwind Labs Pvt Ltd",
+    "jobTitle": "Software Engineer II",
+    "location": "Bengaluru",
+    "stateForProfessionalTax": "KA",
+    "ctcAnnual": 1800000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 720000,
+        "frequency": "annual",
+        "quote": "Basic: Rs. 7,20,000 per annum"
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 360000,
+        "frequency": "annual",
+        "quote": "HRA: Rs. 3,60,000 per annum"
+      },
+      {
+        "label": "Special allowance",
+        "kind": "special_allowance",
+        "amount": 463768,
+        "frequency": "annual",
+        "quote": "Special allowance: Rs. 4,63,768 per annum"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF: Rs. 21,600 per annum"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 34632,
+        "frequency": "annual",
+        "quote": "Gratuity: Rs. 34,632 per annum"
+      },
+      {
+        "label": "Variable pay",
+        "kind": "variable",
+        "amount": 200000,
+        "frequency": "annual",
+        "quote": "Variable pay (target): Rs. 2,00,000 per annum"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "variable_pay_discretion",
+        "quote": "Variable pay is subject to company and individual performance and is paid at the sole discretion of the company."
+      },
+      {
+        "type": "moonlighting",
+        "quote": "You shall not take up any other employment or freelance work without prior written consent from the company."
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 60 days for both parties.",
+        "days": 60
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "variable_pay_discretion",
+      "level": "yellow"
+    },
+    {
+      "id": "moonlighting",
+      "level": "yellow"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "extraction": {
+    "employerName": "Brightpath Consulting Pvt Ltd",
+    "jobTitle": "Business Analyst",
+    "location": "Pune",
+    "stateForProfessionalTax": "MH",
+    "ctcAnnual": 600000,
+    "components": [],
+    "pfBasis": "not_stated",
+    "pfCeilingAmount": null,
+    "clauses": [
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 30 days.",
+        "days": 30
+      },
+      {
+        "type": "background_check",
+        "quote": "This offer is subject to satisfactory background verification."
+      }
+    ],
+    "notes": []
+  },
+  "flags": []
+}

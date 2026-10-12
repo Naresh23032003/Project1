@@ -1,0 +1,95 @@
+{
+  "extraction": {
+    "employerName": "Orbit Payments Pvt Ltd",
+    "jobTitle": "Product Analyst",
+    "location": "Gurugram",
+    "stateForProfessionalTax": "HR",
+    "ctcAnnual": 1440000,
+    "components": [
+      {
+        "label": "Basic",
+        "kind": "basic",
+        "amount": 576000,
+        "frequency": "annual",
+        "quote": "Basic | 5,76,000"
+      },
+      {
+        "label": "HRA",
+        "kind": "hra",
+        "amount": 288000,
+        "frequency": "annual",
+        "quote": "HRA | 2,88,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 414694,
+        "frequency": "annual",
+        "quote": "Special Allowance | 4,14,694"
+      },
+      {
+        "label": "Employer PF",
+        "kind": "employer_pf",
+        "amount": 21600,
+        "frequency": "annual",
+        "quote": "Employer PF | 21,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 27706,
+        "frequency": "annual",
+        "quote": "Gratuity | 27,706"
+      },
+      {
+        "label": "Medical Insurance Premium",
+        "kind": "insurance",
+        "amount": 12000,
+        "frequency": "annual",
+        "quote": "Medical Insurance Premium | 12,000"
+      },
+      {
+        "label": "Variable Pay",
+        "kind": "variable",
+        "amount": 100000,
+        "frequency": "annual",
+        "quote": "Variable Pay | 1,00,000"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "non_compete",
+        "quote": "For a period of 12 months after leaving the company, you shall not join or work for any competitor of the company.",
+        "months": 12
+      },
+      {
+        "type": "non_solicit",
+        "quote": "You shall not solicit any employee or client of the company for 12 months after your last working day.",
+        "months": 12
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 60 days.",
+        "days": 60
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "non_compete",
+      "level": "red"
+    },
+    {
+      "id": "non_solicit",
+      "level": "yellow"
+    }
+  ]
+}

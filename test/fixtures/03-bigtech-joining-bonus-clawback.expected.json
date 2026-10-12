@@ -1,0 +1,104 @@
+{
+  "extraction": {
+    "employerName": "Helix Systems India Pvt Ltd",
+    "jobTitle": "Software Development Engineer",
+    "location": "Hyderabad",
+    "stateForProfessionalTax": "TG",
+    "ctcAnnual": 3200000,
+    "components": [
+      {
+        "label": "Basic Salary",
+        "kind": "basic",
+        "amount": 1280000,
+        "frequency": "annual",
+        "quote": "Basic Salary | 12,80,000"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 640000,
+        "frequency": "annual",
+        "quote": "House Rent Allowance | 6,40,000"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 744832,
+        "frequency": "annual",
+        "quote": "Special Allowance | 7,44,832"
+      },
+      {
+        "label": "Employer PF Contribution",
+        "kind": "employer_pf",
+        "amount": 153600,
+        "frequency": "annual",
+        "quote": "Employer PF Contribution | 1,53,600"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 61568,
+        "frequency": "annual",
+        "quote": "Gratuity | 61,568"
+      },
+      {
+        "label": "Annual Performance Bonus",
+        "kind": "variable",
+        "amount": 320000,
+        "frequency": "annual",
+        "quote": "Annual Performance Bonus (target) | 3,20,000"
+      },
+      {
+        "label": "Joining bonus",
+        "kind": "joining_bonus",
+        "amount": 300000,
+        "frequency": "one_time",
+        "quote": "In addition, you will receive a one-time joining bonus of Rs. 3,00,000, payable with your first salary."
+      },
+      {
+        "label": "Relocation assistance",
+        "kind": "relocation",
+        "amount": 100000,
+        "frequency": "one_time",
+        "quote": "Relocation assistance of Rs. 1,00,000 is repayable if you leave within 12 months."
+      }
+    ],
+    "pfBasis": "full_basic",
+    "pfCeilingAmount": null,
+    "clauses": [
+      {
+        "type": "joining_bonus_clawback",
+        "quote": "The joining bonus is repayable in full if you resign within 24 months of joining.",
+        "months": 24,
+        "amount": 300000
+      },
+      {
+        "type": "relocation",
+        "quote": "Relocation assistance of Rs. 1,00,000 is repayable if you leave within 12 months.",
+        "months": 12,
+        "amount": 100000
+      },
+      {
+        "type": "notice_period",
+        "quote": "The notice period is 60 days.",
+        "days": 60
+      },
+      {
+        "type": "probation",
+        "quote": "Your probation period is 3 months.",
+        "months": 3
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "joining_bonus_clawback",
+      "level": "red"
+    },
+    {
+      "id": "relocation",
+      "level": "yellow"
+    }
+  ]
+}

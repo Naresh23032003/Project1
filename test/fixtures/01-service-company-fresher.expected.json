@@ -1,0 +1,83 @@
+{
+  "extraction": {
+    "employerName": "Zenith Infosystems Ltd",
+    "jobTitle": "Graduate Engineer Trainee",
+    "location": "Chennai",
+    "stateForProfessionalTax": "TN",
+    "ctcAnnual": 360000,
+    "components": [
+      {
+        "label": "Basic Salary",
+        "kind": "basic",
+        "amount": 144000,
+        "frequency": "annual",
+        "quote": "Basic Salary | 1,44,000"
+      },
+      {
+        "label": "House Rent Allowance",
+        "kind": "hra",
+        "amount": 57600,
+        "frequency": "annual",
+        "quote": "House Rent Allowance | 57,600"
+      },
+      {
+        "label": "Special Allowance",
+        "kind": "special_allowance",
+        "amount": 134194,
+        "frequency": "annual",
+        "quote": "Special Allowance | 1,34,194"
+      },
+      {
+        "label": "Employer PF Contribution",
+        "kind": "employer_pf",
+        "amount": 17280,
+        "frequency": "annual",
+        "quote": "Employer PF Contribution | 17,280"
+      },
+      {
+        "label": "Gratuity",
+        "kind": "gratuity",
+        "amount": 6926,
+        "frequency": "annual",
+        "quote": "Gratuity | 6,926"
+      }
+    ],
+    "pfBasis": "ceiling",
+    "pfCeilingAmount": 15000,
+    "clauses": [
+      {
+        "type": "probation",
+        "quote": "You will be on probation for 6 months from your date of joining.",
+        "months": 6
+      },
+      {
+        "type": "service_bond",
+        "quote": "You are required to serve the company for a minimum period of 24 months from your date of joining, failing which you shall pay Rs. 1,00,000 as liquidated damages.",
+        "months": 24,
+        "amount": 100000
+      },
+      {
+        "type": "training_cost_recovery",
+        "quote": "The company shall recover Rs. 50,000 towards training costs if you leave within 12 months of joining.",
+        "months": 12,
+        "amount": 50000
+      },
+      {
+        "type": "notice_period",
+        "quote": "After confirmation, the notice period is 60 days.",
+        "days": 60
+      }
+    ],
+    "notes": []
+  },
+  "flags": [
+    {
+      "id": "service_bond",
+      "level": "red"
+    },
+    {
+      "id": "training_cost_recovery",
+      "level": "red"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ Phases 0 to 5 and 7 are done and the code is on GitHub `main`. Phase 6 (deploy) 
 - E2E: 68 passing across desktop (1440px) and mobile (360px), including axe with zero serious or critical issues in light and dark
 - Lint and typecheck clean. Writing-rule check clean. Build scan: 0 secrets in client bundle
 - Lighthouse mobile, production build: home 97 performance, 100 accessibility, 96 best practices, 100 SEO. Privacy page 92, 100, 96, 100. The one failed best-practices audit was a console 404 for the Vercel analytics script when running off Vercel. The script is now only rendered on Vercel
+- GitHub Actions CI on `main` (commit 02ba475): the `checks` job (lint, typecheck, unit tests, text check, build, build scan) and the `e2e` job (Playwright with axe) both passed on a clean runner using the lockfile that CI generated
 
 ## Golden letter accuracy
 Live extraction accuracy has NOT been measured. The sandbox's network policy blocks `api.groq.com` (and the Anthropic API key was never set), so `npm run test:live` could not reach a model. I did not make up numbers.
@@ -36,6 +37,7 @@ To measure real accuracy: put `GROQ_API_KEY` in `.env.local` on a machine that c
 - Model provider is Groq (`llama-3.3-70b-versatile` by default) because the key you gave is a Groq key. The brief said Claude Haiku. Switch with `LLM_PROVIDER=anthropic`.
 - The brief asked for tool use with a strict JSON schema. Groq's JSON mode plus Zod validation and one retry is used instead, with the schema described in the prompt.
 - `npx skills add` was refused by the sandbox, so the Playwright CLI skill was copied from a clone of its repo. Impeccable's launcher downloads a binary, so I skipped it and followed its documented fallback: PRODUCT.md and DESIGN.md were written by hand from the brief, with no interview round.
+- Pushing: the sandbox's git push returned 403, so files went to GitHub through the GitHub tools. Those commits show the author as "Naresh R" (your GitHub profile name). The lockfile and the vendored skills were produced by one-off workflows that ran `npm install --package-lock-only` and copied the skills from their upstream commits (listed in each `SOURCE.md`), then were deleted. Every other file was compared against the local copy by git hash. The lockfile is new, so it differs from the one used locally, and CI passing is the check on it
 - Fonts: Bricolage Grotesque and Source Sans 3, self-hosted through fontsource.
 - `npm audit` shows 3 moderate findings, all `sprintf-js` through mammoth, which only runs in the visitor's browser.
 - Privacy page CLS is 0.158 from font swapping (home is 0.003). Moving to `next/font/local` with a latin and latin-ext pair would fix it.
